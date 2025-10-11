@@ -38,7 +38,7 @@ export default class Gear16Teeth extends Sprite {
         this.toNumber(this.stage.vars.speedOverall);
       for (let i = 0; i < 360; i++) {
         this.direction -= 1;
-        yield* this.wait(600 / (this.toNumber(this.stage.vars._16rpm) * 360));
+        yield* this.wait(60 / (this.toNumber(this.stage.vars._16rpm) * 360));
         yield;
       }
       yield;
