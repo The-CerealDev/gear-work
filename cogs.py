@@ -10,6 +10,8 @@ ada = 0 #this person takes the sum of all the 792 different digits
 will = 0 #this person multiplies the three numbers in each of the cogs each turn and adds the sum of of all 792 multiplications 
 print(startcomb)
 n =0
+T =0
+S = 0
 while comb != startcomb :
     
     if cog1 < cog16:
@@ -22,6 +24,15 @@ while comb != startcomb :
         cog3 +=1
     else: cog3 = startcomb[1]
     comb = [cog1, cog3, cog2]
+    will = comb[0]*comb[1]*comb[2]
+    ada = int(str(comb[0])+str(comb[0])+str(comb[0]))
+    T += will
+    S += ada
     n += 1
     print(comb)
+    print(f"adas stuff {ada}")
+    print("wills cog",will)
 print(n)
+print(f"T = {T}")#this prints the total sum of all the 792 products 
+print(f"S = {S}")
+print(f"S/T ={S/T}")
