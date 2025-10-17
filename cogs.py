@@ -10,8 +10,8 @@ ada = 1+10+1 #this person takes the sum of all the 792 different digits
 will = 1101 #this person multiplies the three numbers in each of the cogs each turn and adds the sum of of all 792 multiplications 
 print(startcomb)
 n =0
-T =1101
-S = 1+10+1
+T =0
+S = 0
 while comb != startcomb :
     
     if cog1 < cog16:
