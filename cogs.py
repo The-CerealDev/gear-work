@@ -12,7 +12,7 @@ print(startcomb)
 n =0
 T =0
 S = 0
-while comb != startcomb :
+while comb != startcomb:
     
     if cog1 < cog16:
         cog1 +=1
@@ -25,13 +25,14 @@ while comb != startcomb :
     else: cog3 = startcomb[1]
     comb = [cog1, cog3, cog2]
     will = comb[0]*comb[1]*comb[2]
-    ada = int(str(comb[0])+str(comb[1])+str(comb[2]))
-    T += will
+    ada = comb[0]*1000+comb[1]*10+comb[2]
+    T += will        #print("ddavid is a diddy blud")
     S += ada
     n += 1
     print(comb)
     print(f"adas stuff {ada}")
     print("wills cog",will)
+    #print("ddavid is a diddy blud")
 print(n)
 print(f"T = {T}")#this prints the total sum of all the 792 products 
 print(f"S = {S}")
